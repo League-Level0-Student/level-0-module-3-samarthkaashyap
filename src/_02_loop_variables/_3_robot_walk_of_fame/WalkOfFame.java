@@ -11,7 +11,27 @@ public class WalkOfFame {
 		// You also need to show the robot to see the result of this line.
 
 		// 2. Make the robot draw a star shape. Hint: angle=144.
+		
+		
+int x = 1;
+int i = 0;
+rob.setSpeed(20);
+rob.setX(100);
+while (x<=10) {
+	i=0;
+	rob.setAngle(90);
+	rob.penDown();
+while (i<=5) {
+rob.move(30);
+rob.turn(144);
+i++;
+}
+rob.setAngle(90);
+rob.penUp();
+rob.move(50);
+x++;
 
+}
 		// 3. Set the length of each line in the star to 30.
 
 		/** THE CHALLENGE: **/
@@ -21,6 +41,7 @@ public class WalkOfFame {
 		 * Hint: The distance between stars is 50.
 		 */
 
-	}
+	
 
+}
 }
